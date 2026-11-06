@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repository Finder</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <main class="contenedor">
+
+        <h1>GitHub Repository Finder</h1>
+        <p>Encuentra repositorios aleatorios de GitHub</p>
+
+        <!-- Seleccionar lenguaje -->
+        <select id="lenguaje">
+            <option value="">Selecciona un lenguaje</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Python">Python</option>
+            <option value="Java">Java</option>
+            <option value="PHP">PHP</option>
+            <option value="TypeScript">TypeScript</option>
+            <option value="Ruby">Ruby</option>
+        </select>
+
+        <!-- Mensaje de estado -->
+        <div id="estado">
+            Selecciona un lenguaje para comenzar.
+        </div>
+
+        <!-- Información del repositorio -->
+        <div id="repositorio" class="oculto">
+
+            <h2 id="nombre"></h2>
+
+            <p id="descripcion"></p>
+
+            <div class="datos">
+                <span>⭐ Estrellas: <strong id="estrellas"></strong></span>
+
+                <span>🍴 Forks: <strong id="forks"></strong></span>
+
+                <span>❗ Issues: <strong id="issues"></strong></span>
+            </div>
+
+        </div>
+
+        <!-- Botones -->
+        <button id="refrescar" class="oculto">
+            ↻ Buscar otro repositorio
+        </button>
+
+        <button id="reintentar" class="oculto">
+            Intentar de nuevo
+        </button>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+}
+
+.contenedor {
+    background-color: white;
+    max-width: 550px;
+    margin: 70px auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+p {
+    color: #666;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #333;
+    border-radius: 7px;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+/* Mensaje de estado */
+#estado {
+    background-color: #e9ecef;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.cargando {
+    background-color: #dcecff !important;
+}
+
+.error {
+    background-color: #ffdada !important;
+    color: #b52222;
+}
+
+/* Tarjeta del repositorio */
+#repositorio {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #245eaa;
+    font-size: 21px;
+}
+
+.datos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 14px;
+}
+
+/* Botones */
+button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 15px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+#reintentar {
+    background-color: #d93030;
+}
+
+/* Ocultar elementos */
+.oculto {
+    display: none;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 600px) {
+    .contenedor {
+        margin: 20px auto;
+        padding: 20px;
+    }
+}
